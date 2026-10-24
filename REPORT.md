@@ -112,12 +112,12 @@ The adjusted GradientBoost model performs better after implementing the changes 
 | Model | Test Accuracy |
 |---|---:|
 | Logistic Regression | 44.80% |
-| Tuned Decision Tree | 39.60% |
 | Default Decision Tree | 38.60% |
+| Tuned Decision Tree | 39.60% |
 | Default SVM | 44.20% |
 | Tuned SVM | 43.00% |
-| Tuned Gradient Boosting | 42.80% |
 | Default Gradient Boosting | 39.20% |
+| Tuned Gradient Boosting | 42.80% |
 
 Four model types were trained on the wine_quality_dataset: logistic regression, decision tree, support vector machine, and gradient boost. Logistic regression achieved the highest test accuracy, followed by the default SVM. For decision tree, svm, and gradient boosting, the default hyperparmeters showed signs of overfitting. 
 
