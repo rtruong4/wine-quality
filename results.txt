@@ -1,0 +1,215 @@
+Model: Logistic Regression
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 0.4370
+Training error: 0.5630
+Validation accuracy: 0.4380
+Validation error: 0.5620
+Test accuracy: 0.4480
+Test error: 0.5520
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.45      0.29      0.36       201
+ Medium-High       0.00      0.00      0.00        62
+  Medium-Low       0.45      0.77      0.56       215
+
+    accuracy                           0.45       500
+   macro avg       0.18      0.21      0.18       500
+weighted avg       0.37      0.45      0.39       500
+
+
+
+Model: Tuned Decision Tree
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 0.4948
+Training error: 0.5052
+Validation accuracy: 0.4100
+Validation error: 0.5900
+Test accuracy: 0.3960
+Test error: 0.6040
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.31      0.13      0.18       201
+ Medium-High       0.33      0.03      0.06        62
+  Medium-Low       0.42      0.79      0.55       215
+
+    accuracy                           0.40       500
+   macro avg       0.21      0.19      0.16       500
+weighted avg       0.34      0.40      0.32       500
+
+
+
+Model: Default Decision Tree
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 1.0000
+Training error: 0.0000
+Validation accuracy: 0.3420
+Validation error: 0.6580
+Test accuracy: 0.3660
+Test error: 0.6340
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.40      0.43      0.42       201
+ Medium-High       0.19      0.23      0.21        62
+  Medium-Low       0.43      0.38      0.41       215
+
+    accuracy                           0.37       500
+   macro avg       0.21      0.21      0.21       500
+weighted avg       0.37      0.37      0.37       500
+
+
+
+Model: Tuned Gradient Boosting
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 0.4745
+Training error: 0.5255
+Validation accuracy: 0.4220
+Validation error: 0.5780
+Test accuracy: 0.4280
+Test error: 0.5720
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.40      0.16      0.23       201
+ Medium-High       0.00      0.00      0.00        62
+  Medium-Low       0.43      0.85      0.57       215
+
+    accuracy                           0.43       500
+   macro avg       0.17      0.20      0.16       500
+weighted avg       0.35      0.43      0.34       500
+
+
+
+Model: Default Gradient Boosting
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 0.6885
+Training error: 0.3115
+Validation accuracy: 0.4200
+Validation error: 0.5800
+Test accuracy: 0.4020
+Test error: 0.5980
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.39      0.33      0.36       201
+ Medium-High       0.11      0.02      0.03        62
+  Medium-Low       0.42      0.62      0.50       215
+
+    accuracy                           0.40       500
+   macro avg       0.19      0.19      0.18       500
+weighted avg       0.35      0.40      0.36       500
+
+
+
+Model: Tuned SVM
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 0.4303
+Training error: 0.5697
+Validation accuracy: 0.4300
+Validation error: 0.5700
+Test accuracy: 0.4300
+Test error: 0.5700
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.00      0.00      0.00       201
+ Medium-High       0.00      0.00      0.00        62
+  Medium-Low       0.43      1.00      0.60       215
+
+    accuracy                           0.43       500
+   macro avg       0.09      0.20      0.12       500
+weighted avg       0.18      0.43      0.26       500
+
+
+
+Model: Default SVM
+Stratification: True
+
+Dataset rows: 5000
+Features: 11
+Training rows: 4000
+Validation rows: 500
+Test rows: 500
+
+Training accuracy: 0.5600
+Training error: 0.4400
+Validation accuracy: 0.4340
+Validation error: 0.5660
+Test accuracy: 0.4420
+Test error: 0.5580
+
+Classification report:
+              precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         5
+         Low       0.00      0.00      0.00        17
+      Medium       0.43      0.35      0.39       201
+ Medium-High       0.00      0.00      0.00        62
+  Medium-Low       0.45      0.70      0.55       215
+
+    accuracy                           0.44       500
+   macro avg       0.18      0.21      0.19       500
+weighted avg       0.37      0.44      0.39       500
+
