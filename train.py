@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
@@ -141,8 +141,6 @@ def evaluate_model(
     training_accuracy = accuracy_score(y_train, y_train_pred)
     validation_accuracy = accuracy_score(y_validation, y_validation_pred)
     test_accuracy = accuracy_score(y_test, y_pred)
-    report = classification_report(y_test, y_pred, zero_division=0)
-
     return f"""Model: {model_name}
 
     # Formatting the evaluation results for readability.
@@ -155,14 +153,8 @@ Validation rows: {X_validation.shape[0]}
 Test rows: {X_test.shape[0]}
 
 Training accuracy: {training_accuracy:.4f}
-Training error: {1 - training_accuracy:.4f}
 Validation accuracy: {validation_accuracy:.4f}
-Validation error: {1 - validation_accuracy:.4f}
 Test accuracy: {test_accuracy:.4f}
-Test error: {1 - test_accuracy:.4f}
-
-Classification report:
-{report}
 """
 
 

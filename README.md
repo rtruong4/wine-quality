@@ -25,3 +25,32 @@ These are basic validity rules, not a guarantee of chemical plausibility.
 The script prints counts of removed rows. It does not split, scale, encode,
 impute, rebalance classes, or remove statistical outliers. Any transformations
 that learn from data should be fitted on training data after the future split.
+
+## Training
+
+Run the complete model comparison after preprocessing:
+
+```bash
+python train.py
+```
+
+`train.py` uses an 80/10/10 training, validation, and test split. Set
+`use_stratification` to `True` or `False` in the script to compare stratified
+and non-stratified splits.
+
+The script trains and evaluates these models:
+
+- Logistic Regression
+- Tuned and default Decision Tree
+- Tuned and default Gradient Boosting
+- Tuned and default Support Vector Machine
+
+Logistic Regression and SVM use standardization. Decision Tree and Gradient
+Boosting models do not require feature scaling. The quality labels remain as
+text because the scikit-learn classifiers handle target-label encoding
+internally.
+
+Results are written to `results.txt`, including training, validation, and test
+accuracy for every model. The script does not generate charts or print the
+detailed results to the terminal; it only prints the location of the results
+file.
