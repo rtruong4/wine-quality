@@ -5,7 +5,7 @@
 **Date:** 10/25/26
 
 ## 1. Objective
-A classifier model experiment for determining wine quality. 
+A classifier model experiment for determining wine quality. The evaluated models are logistic regression, decision tree, support vector machine, and gradient boost.
 
 ## 3. Data Exploration
 ### Class Distribution
