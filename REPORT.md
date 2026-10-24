@@ -1,8 +1,10 @@
 # **Wine Quality Classification**
 
 **Name:** Ryan Truong
+
 **Course:** CS 271  
-**Date:** 10/25/26
+
+**Date:** 10/24/26
 
 ## **Objective**
 A classifier model experiment for determining wine quality. The evaluated models are logistic regression, decision tree, support vector machine, and gradient boost. This report focuses entirely on accuracy as the performance metric. F1 score, precision, and recall may offer more insights in future work.
