@@ -11,9 +11,13 @@ A classifier model experiment for determining wine quality. The evaluated models
 ### Class Distribution
 
 High: 50
+
 Low: 163
+
 Medium: 2,016
+
 Medium-High: 620
+
 Medium-Low: 2,151
 
 ## 4. Preprocessing
